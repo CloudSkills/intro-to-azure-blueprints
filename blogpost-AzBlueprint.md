@@ -9,7 +9,7 @@ There many techniques to control the deployment of an environment. Techniques ra
 Azure Blueprints is a new service, currently in preview, that helps you define your environment before you start building your Azure house. Azure Blueprint uses existing Azure services like Azure Policies, permissions and ARM templates to allow you to control the rollout of your environment. Let's take a look a the components of an Azure Blueprint.
 
 ## Blueprint Components
-              
+
 Azure Blueprints are made up of a couple of different building blocks called Artifacts. Each Artifact is a current Azure services so you are likely already familiar with them. 
 
 ## Artifacts
@@ -60,7 +60,7 @@ Now that we understand the basics of Azure Blueprints, let's consider the follow
 * Resource group for network resources
 * Resource group for VM
 * Contributor role for "Cloud Admins" group on the subscription
-* Virtual machine contributor role for "Helpdesk Team"  
+* Virtual machine contributor role for "Helpdesk Team" on the Virtual Machine Resource Group
 * Ensure VM are backed up
 * Assign Usage tag to all resources
 * Make the environment reproducible for other subscriptions
