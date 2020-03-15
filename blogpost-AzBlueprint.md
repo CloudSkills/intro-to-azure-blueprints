@@ -11,9 +11,9 @@ Azure Blueprints is a new service, currently in preview, that helps you define y
 ## Blueprint Components
               
 Azure Blueprints are made up of a couple of different building blocks called Artifacts. Each Artifact is a current Azure services so you are likely already familiar with them. 
-                     
+
 ## Artifacts
-              
+
 + **ARM Templates** - Use your own ARM templates or any of the Azure Quick Start templates 
 + **Resource Groups** - Specify the resource groups you want to create
 + **Roles Assignments** - Apply IAM roles to the deployed resource groups to control access to resources
@@ -87,7 +87,7 @@ Now that we understand the basics of Azure Blueprints, let's consider the follow
 
 5. At the subscription level
 
-    * Add artifact > Policy assignment
+   * Add artifact > Policy assignment
 
 ![AddArtifacts](/images/step-5-1-Add-Artifacts.png "Add Artifacts")
 
@@ -111,7 +111,7 @@ Now that we understand the basics of Azure Blueprints, let's consider the follow
 
 ![AddResourceGroup](/images/step-5-5-Add-ResourceGroup.png "Add Resource Group")
 
-   * Add artifact > Role assignment > Contributor choose Cloud Admins group
+   * Add artifact > Role assignment > Select **Contributor** and choose the **Cloud Admins** group (this is a preexisting Azure AD group)
 
 ![AddRoleAssignment](/images/step-5-6-Add-RoleAssignment.png "Add Role Assignment")
 
@@ -127,7 +127,7 @@ Now that we understand the basics of Azure Blueprints, let's consider the follow
 
 ![AddPolicyInheritTag](/images/step-7-Add-PolicyInheritTag.png "Add Policy Inherit Tag")
 
-   * Add artifact > Role assignment > Virtual Machine Contributor
+   * Add artifact > Role assignment > Select **Virtual Machine Contributor** choose the **Helpdesk Team** group (this is a preexisting Azure AD group)
 
 ![AddRoleAssignmentVM](/images/step-7-1-Add-RoleAssignmentVM.png "Add Role Assignment VM")
 
@@ -153,7 +153,7 @@ Now that we understand the basics of Azure Blueprints, let's consider the follow
 
 10. Assign Blueprint
 
-    * Click on Blueprint-01 > Assign blueprint
+   * Click on Blueprint-01 > Assign blueprint
 
 ![AssignBlueprint](/images/step-10-AssignBlueprint.png "Assign Blueprint")
 
@@ -178,11 +178,11 @@ Now that we understand the basics of Azure Blueprints, let's consider the follow
 
 12. Connect to Azure tenant
 
-    * Connect to to your Azure tenant via PowerShell
+   * Connect to to your Azure tenant via PowerShell
 
 13. Export Blueprint for redistribution
 
-    * We can use the Az.Blueprint PowerShell module to export the Blueprint with the following commands:
+   * We can use the Az.Blueprint PowerShell module to export the Blueprint with the following commands:
 
 ```azurepowershell
 Connect-AzAccount
@@ -192,9 +192,11 @@ Export-AzBlueprintWithArtifact -Blueprint $bpDefinition -OutputPath 'C:\Images\B
 
    * The result of running those commands looks like this:
 
-![Export Blueprint](/images/step-13-ExportBlueprint.png "Export Blueprint")
+![ExportBlueprint](/images/step-13-ExportBlueprint.png "Export Blueprint")
 
    * If you browse to the specified directory you will find a folder that matches the name of your Blueprint that contains a JSON file and a subfolder called Artifacts that contains your artifacts.
+
+![ExportedFiles](/images/step-13-1-exportedfiles.png "Exported Files")
 
 14. Now we have exported the Blueprint named Blueprint-01 for use with other projects. We can save it locally or share it with Git or Azure DevOps.
 
