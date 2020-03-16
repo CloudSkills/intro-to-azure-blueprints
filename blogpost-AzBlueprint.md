@@ -81,9 +81,9 @@ Now that we understand the basics of Azure Blueprints, let's consider the follow
 
 4. Enter Blueprint name, Blueprint description and Definition location, then click Next: **Artifacts**
 
-![BlueprintBasicInfo](/images/step-4-create-blueprint-basics.png "Blueprint Basic Info")
-
 > The location can be a subscription or a management group
+
+![BlueprintBasicInfo](/images/step-4-create-blueprint-basics.png "Blueprint Basic Info")
 
 5. At the subscription level
 
@@ -107,27 +107,27 @@ Now that we understand the basics of Azure Blueprints, let's consider the follow
 
 ![PolicyAzureTags](/images/step-5-4-1-Add-Policy-Tags.png "Policy - Azure Tags")
 
-   * Add artifact > Resource group named **Virtual Machine Resource Group**
+   * Add artifact > Enter Artifact display name **Virtual Machine Resource Group** > uncheck the box **This value should be specified when the blueprint is assigned** and enter **VirtualMachine-RG** for the Resource Group Name
 
 ![AddResourceGroup](/images/step-5-5-Add-ResourceGroup.png "Add Resource Group")
 
-   * Add artifact > Role assignment > Select **Contributor** and choose the **Cloud Admins** group (this is a preexisting Azure AD group)
+   * Add artifact > Role assignment > Select **Contributor** for the Role and choose the **Cloud Admins** group (this is a preexisting Azure AD group)
 
 ![AddRoleAssignment](/images/step-5-6-Add-RoleAssignment.png "Add Role Assignment")
 
 6. At the VNET Resource Group level
 
-   * Add artifact > Azure Policy > select the **Inherit a tag from the resource group** policy
+   * Add artifact > Azure Policy > select the policy: **Inherit a tag from the resource group**
 
 ![AddPolicyInheritTag](/images/step-6-Add-PolicyInheritTag.png "Add Policy Inherit Tag")
 
 7. At the Virtual Machine Resource Group level
 
-   * Add artifact > Azure Policy > select the **Inherit a tag from the resource group** policy
+   * Add artifact > Azure Policy > select the policy: **Inherit a tag from the resource group**
 
 ![AddPolicyInheritTag](/images/step-7-Add-PolicyInheritTag.png "Add Policy Inherit Tag")
 
-   * Add artifact > Role assignment > Select **Virtual Machine Contributor** choose the **Helpdesk Team** group (this is a preexisting Azure AD group)
+   * Add artifact > Role assignment > Select **Virtual Machine Contributor** for the Role and choose the **Helpdesk Team** group (this is a preexisting Azure AD group)
 
 ![AddRoleAssignmentVM](/images/step-7-1-Add-RoleAssignmentVM.png "Add Role Assignment VM")
 
@@ -137,13 +137,13 @@ Now that we understand the basics of Azure Blueprints, let's consider the follow
 
 9. Publish Blueprint
 
-    * Click on Blueprint definitions > and from there you will see a list of Blueprints 
+    * Click on Blueprint definitions and your Blueprint definitions will be listed 
 
 ![BlueprintView1](/images/step-9-BlueprintView1.png "Blueprint View 1")
 
 > Notice the different icons, the lighter icon denotes draft Blueprints and the darker ones are published
 
-   * Open Blueprint definitions > Click on Blueprint-01 > Publish Blueprint
+   * Open Blueprint definitions > Click on Blueprint-01 > **Publish Blueprint**
 
 ![PublishBlueprint](/images/step-9-1-PublishBlueprint.png "Publish Blueprint")
 
@@ -153,7 +153,7 @@ Now that we understand the basics of Azure Blueprints, let's consider the follow
 
 10. Assign Blueprint
 
-   * Click on Blueprint-01 > Assign blueprint
+   * Click on Blueprint-01 > **Assign blueprint**
 
 ![AssignBlueprint](/images/step-10-AssignBlueprint.png "Assign Blueprint")
 
