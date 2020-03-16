@@ -71,15 +71,15 @@ Now that we understand the basics of Azure Blueprints, let's consider the follow
 
 ![OpenBlueprint](/images/step-1-open-blueprint.png "Open Blueprint")
 
-2. In the Create a blueprint section, click Create
+2. In the Create a blueprint section, click **Create**
 
 ![CreateNewBlueprint](/images/step-2-create-new.png "Create New Blueprint")
 
-3. Select the Basic Networking (VNET) template
+3. Select the **Basic Networking (VNET) template**
 
 ![SelectBlueprintTemplate](/images/step-3-select-template.png "Select Blueprint Template")
 
-4. Enter Blueprint name, Blueprint description and Definition location, then click Next: Artifacts.
+4. Enter Blueprint name, Blueprint description and Definition location, then click Next: **Artifacts**
 
 ![BlueprintBasicInfo](/images/step-4-create-blueprint-basics.png "Blueprint Basic Info")
 
@@ -95,15 +95,15 @@ Now that we understand the basics of Azure Blueprints, let's consider the follow
 
 ![AddPolicy](/images/step-5-2-Add-Policy.png "Add Policy")
 
-   * Type "Azure Backup" in the search field and select Azure backup should be enabled for Virtual Machines > Click Add
+   * Type "Azure Backup" in the search field and select **Azure backup should be enabled for Virtual Machines** > Click Add
 
 ![PolicyAzureBackup](/images/step-5-3-Add-Policy-Backup.png "Policy - Azure Backup")    
 
-   * Type "add a tag" in the search field and select Add a tag to resource groups > Click Add
+   * Type "add a tag" in the search field and select **Add a tag to resource groups** > Click Add
 
 ![PolicyAzureTags](/images/step-5-4-Add-Policy-Tags.png "Policy - Azure Tags")
 
-   * From the Create Blueprint hierarchy > select the "Add a tag to resource groups" policy and enter the tag: Usage and tag value: Production 
+   * From the Create Blueprint hierarchy > select the **Add a tag to resource groups** policy and enter the tag: Usage and tag value: Production 
 
 ![PolicyAzureTags](/images/step-5-4-1-Add-Policy-Tags.png "Policy - Azure Tags")
 
@@ -117,13 +117,13 @@ Now that we understand the basics of Azure Blueprints, let's consider the follow
 
 6. At the VNET Resource Group level
 
-   * Add artifact > Azure Policy > Inherit a tag from the resource group
+   * Add artifact > Azure Policy > select the **Inherit a tag from the resource group** policy
 
 ![AddPolicyInheritTag](/images/step-6-Add-PolicyInheritTag.png "Add Policy Inherit Tag")
 
 7. At the Virtual Machine Resource Group level
 
-   * Add artifact > Azure Policy > Inherit a tag from the resource group
+   * Add artifact > Azure Policy > select the **Inherit a tag from the resource group** policy
 
 ![AddPolicyInheritTag](/images/step-7-Add-PolicyInheritTag.png "Add Policy Inherit Tag")
 
@@ -158,7 +158,7 @@ Now that we understand the basics of Azure Blueprints, let's consider the follow
 ![AssignBlueprint](/images/step-10-AssignBlueprint.png "Assign Blueprint")
 
    * Enter Assignment name, Location, definition version
-   * Choose Lock Assignment value "Do Not Delete" to prevent artifacts defined by blueprint from being deleted
+   * Choose Lock Assignment value **Do Not Delete** to prevent artifacts defined by blueprint from being deleted
 
 ![AssignBlueprintSettings0](/images/step-10-1-AssignBlueprintInfo0.png "Assign Blueprint Settings 0")
 
@@ -170,7 +170,7 @@ Now that we understand the basics of Azure Blueprints, let's consider the follow
  
 ![AssignBlueprintSettings3](/images/step-10-1-AssignBlueprintInfo3.png "Assign Blueprint Settings 3")
 
-   * Click Assign
+   * Click **Assign**
 
 11. Verify resources deployed correctly
 
