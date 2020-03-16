@@ -131,13 +131,13 @@ Now that we understand the basics of Azure Blueprints, let's consider the follow
 
 ![AddRoleAssignmentVM](/images/step-7-1-Add-RoleAssignmentVM.png "Add Role Assignment VM")
 
-8. Save Draft
+8. Click **Save Draft**
 
 ![SaveDraft](/images/step-8-Save-Draft.png "Save Draft")
 
 9. Publish Blueprint
 
-    * Click on Blueprint definitions and your Blueprint definitions will be listed 
+    * Click on Blueprint definitions, this will list your Blueprints 
 
 ![BlueprintView1](/images/step-9-BlueprintView1.png "Blueprint View 1")
 
