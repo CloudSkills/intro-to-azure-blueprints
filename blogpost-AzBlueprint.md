@@ -1,25 +1,25 @@
 # Introduction to Azure Blueprints
-
-Let me ask you a question. Would you consider building a house without knowing what it would look like when you're done? The supplies needed? An idea of what is allowed by building and safety codes? I assume the answer to that question is an emphatic, NO. So why do you build your Azure environments that way?
-
-As a consultant for a managed service provider, producing a consistent, supportable and reproducible environment is a part of my design philosophy. Deviating my company's design principles and best practices increase support costs and lead to unhappy customers. That's why I'm very interested in technologies that can save me time and effort.
-
-There are many techniques to control the deployment of an environment. Techniques range from the low tech spreadsheet with a checklist of tasks, to the modern infrastructure-as-code technologies like Terraform or Ansible. In my view, checklists are too slow and error-prone and infrastructure-as-code technologies need too much ramp-up time to be effective for the small Azure environments our customers need. Microsoft might have hit the sweet spot between simplicity and power with Azure Blueprints.
-
-Azure Blueprints is a new service, currently in preview, that helps you define your environment's foundation before you start building your Azure "house". Azure Blueprints use existing Azure services like Azure Policies, permissions and ARM templates to give you control of the rollout of your environment. Let's take a look a the components of an Azure Blueprint.
-
-## Blueprint Components
-
-Azure Blueprints are made up of building blocks called **artifacts**. Each Artifact is a current Azure services so you are likely already familiar with them. 
-
-## Artifacts
-
-+ **ARM Templates** - Use your own ARM templates or any of the Azure Quick Start templates 
-+ **Resource Groups** - Specify the resource groups you want to create
-+ **Roles Assignments** - Apply IAM roles to the deployed resource groups to apply permissions to users and/or groups
-+ **Policies Assignments** - Apply Azure Policies and/or Initiatives to your environments
-
-## Blueprint creation workflow
+       
+              t me ask you a question. Would you consider building a house without knowing what it would look like when you're done? The supplies needed? An idea of what is allowed by building and safety codes? I assume the answer to that question is an emphatic, NO. So why do you build your Azure environments that way?
+                     
+               a consultant for a managed service provider, producing a consistent, supportable and reproducible environment is a part of my design philosophy. Deviating my company's design principles and best practices increase support costs and lead to unhappy customers. That's why I'm very interested in technologies that can save me time and effort.
+              
+                     re are many techniques to control the deployment of an environment. Techniques range from the low tech spreadsheet with a checklist of tasks, to the modern infrastructure-as-code technologies like Terraform or Ansible. In my view, checklists are too slow and error-prone and infrastructure-as-code technologies need too much ramp-up time to be effective for the small Azure environments our customers need. Microsoft might have hit the sweet spot between simplicity and power with Azure Blueprints.
+                     
+              ure Blueprints is a new service, currently in preview, that helps you define your environment's foundation before you start building your Azure "house". Azure Blueprints use existing Azure services like Azure Policies, permissions and ARM templates to give you control of the rollout of your environment. Let's take a look a the components of an Azure Blueprint.
+              
+                     Blueprint Components
+              
+              ure Blueprints are made up of building blocks called **artifacts**. Each Artifact is a current Azure services so you are likely already familiar with them. 
+                     
+                     Artifacts
+              
+              **ARM Templates** - Use your own ARM templates or any of the Azure Quick Start templates 
+                     *Resource Groups** - Specify the resource groups you want to create
+                     *Roles Assignments** - Apply IAM roles to the deployed resource groups to apply permissions to users and/or groups
+              **Policies Assignments** - Apply Azure Policies and/or Initiatives to your environments
+       
+       # Blueprint creation workflow
 What does creating a new Blueprint look like? The creation of a Blueprint involves three simple steps:
 
 1. **Create a Draft of your Blueprint** -  Add Artifacts (ARM templates, Policies, Resource Groups and Roles) into a hierarchy to define your environment. When you add an ARM Template to your design you will have the option to define the parameters when you build the Blueprint or allow the parameters to be defined when the Blueprint is assigned.
