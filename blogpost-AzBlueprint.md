@@ -13,8 +13,8 @@ Azure Blueprints is a new service, currently in preview, that helps you define y
 Azure Blueprints are made up of building blocks called **artifacts**. Each Artifact is a current Azure service so you are likely already familiar with them. 
 
 ## Artifacts
-+ **ARM Templates** - Use your own ARM templates or any of the Azure Quick Start templates 
-* **Resource Groups** - Specify the resource groups you want to create
++ **ARM Templates** - Use your own ARM templates or any of the Azure Quick Start templates
++ **Resource Groups** - Specify the resource groups you want to create
 + **Roles Assignments** - Apply IAM roles to the deployed resource groups to apply permissions to users and/or groups
 + **Policies Assignments** - Apply Azure Policies and/or Initiatives to your environments
 
