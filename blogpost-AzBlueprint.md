@@ -1,28 +1,27 @@
 # Introduction to Azure Blueprints
-       
-              t me ask you a question. Would you consider building a house without knowing what it would look like when you're done? The supplies needed? An idea of what is allowed by building and safety codes? I assume the answer to that question is an emphatic, NO. So why do you build your Azure environments that way?
-                     
-               a consultant for a managed service provider, producing a consistent, supportable and reproducible environment is a part of my design philosophy. Deviating my company's design principles and best practices increase support costs and lead to unhappy customers. That's why I'm very interested in technologies that can save me time and effort.
-              
-                     re are many techniques to control the deployment of an environment. Techniques range from the low tech spreadsheet with a checklist of tasks, to the modern infrastructure-as-code technologies like Terraform or Ansible. In my view, checklists are too slow and error-prone and infrastructure-as-code technologies need too much ramp-up time to be effective for the small Azure environments our customers need. Microsoft might have hit the sweet spot between simplicity and power with Azure Blueprints.
-                     
-              ure Blueprints is a new service, currently in preview, that helps you define your environment's foundation before you start building your Azure "house". Azure Blueprints use existing Azure services like Azure Policies, permissions and ARM templates to give you control of the rollout of your environment. Let's take a look a the components of an Azure Blueprint.
-              
-                     Blueprint Components
-              
-              ure Blueprints are made up of building blocks called **artifacts**. Each Artifact is a current Azure services so you are likely already familiar with them. 
-                     
-                     Artifacts
-              
-              **ARM Templates** - Use your own ARM templates or any of the Azure Quick Start templates 
-                     *Resource Groups** - Specify the resource groups you want to create
-                     *Roles Assignments** - Apply IAM roles to the deployed resource groups to apply permissions to users and/or groups
-              **Policies Assignments** - Apply Azure Policies and/or Initiatives to your environments
-       
-       # Blueprint creation workflow
+
+Let me ask you a question. Would you consider building a house without knowing what it would look like when you're done? The supplies needed? An idea of what is allowed by building and safety codes? I assume the answer to those questions are an emphatic, NO. So why do you build your Azure environments that way?
+
+As a consultant for a managed service provider, producing a consistent, supportable and reproducible environment is a part of my design philosophy. Deviating from my company's design principles and best practices increases support costs and leads to unhappy customers. That's why I'm very interested in technologies that can save me time and effort.
+
+There are many techniques to control the deployment of an Azure environment. Techniques range from the low tech spreadsheet with a checklist of tasks, to the modern infrastructure-as-code technologies like Terraform or Ansible. In my view, checklists are too slow and error-prone, and infrastructure-as-code technologies need too much ramp-up time to be effective for the small Azure environments our customers need. Microsoft might have hit the sweet spot between simplicity and power with Azure Blueprints.
+
+Azure Blueprints is a new service, currently in preview, that helps you define your environment's foundation before you start building your Azure "house". Azure Blueprints use existing Azure services like Azure Policies, permissions and ARM templates to give you control of the rollout of your environment. Let's take a look a the components of an Azure Blueprint.
+
+## Blueprint Components
+
+Azure Blueprints are made up of building blocks called **artifacts**. Each Artifact is a current Azure service so you are likely already familiar with them. 
+
+## Artifacts
++ **ARM Templates** - Use your own ARM templates or any of the Azure Quick Start templates 
+* **Resource Groups** - Specify the resource groups you want to create
++ **Roles Assignments** - Apply IAM roles to the deployed resource groups to apply permissions to users and/or groups
++ **Policies Assignments** - Apply Azure Policies and/or Initiatives to your environments
+
+## Blueprint creation workflow
 What does creating a new Blueprint look like? The creation of a Blueprint involves three simple steps:
 
-1. **Create a Draft of your Blueprint** -  Add Artifacts (ARM templates, Policies, Resource Groups and Roles) into a hierarchy to define your environment. When you add an ARM Template to your design you will have the option to define the parameters when you build the Blueprint or allow the parameters to be defined when the Blueprint is assigned.
+1. **Create a draft of your Blueprint** -  Add Artifacts (ARM templates, Policies, Resource Groups and Roles) into a hierarchy to define your environment. When you add an ARM Template to your design, you will have the option to define the parameters when you build the Blueprint or allow the parameters to be defined when the Blueprint is assigned.
 2. **Publish your Blueprint** - After your Blueprint is ready to go, publish it by giving it a version number and description. It is now ready to be assigned.
 3. **Assign your Blueprint** - Assign your published Blueprint to your subscriptions or management groups. After assignment your environment will be created, resources deployed and polices applied.
 
@@ -87,11 +86,11 @@ Now that we understand the basics of Azure Blueprints, let's consider the follow
 
 5. At the subscription level
 
-   * Add artifact > Policy assignment
+   * Click **Add artifact...**
 
 ![AddArtifacts](/images/step-5-1-Add-Artifacts.png "Add Artifacts")
 
-   * Add artifact > Policy assignment
+   * Choose **Policy assignment**
 
 ![AddPolicy](/images/step-5-2-Add-Policy.png "Add Policy")
 
@@ -141,7 +140,7 @@ Now that we understand the basics of Azure Blueprints, let's consider the follow
 
 ![BlueprintView1](/images/step-9-BlueprintView1.png "Blueprint View 1")
 
-> Notice the different icons, the lighter icon denotes draft Blueprints and the darker ones are published
+> Notice the different icons; the lighter icon denotes draft Blueprints and the darker ones are published
 
    * Open Blueprint definitions > Click on Blueprint-01 > **Publish Blueprint**
 
@@ -180,7 +179,7 @@ Now that we understand the basics of Azure Blueprints, let's consider the follow
 
 12. Connect to Azure tenant
 
-   * Connect to to your Azure tenant via PowerShell
+   * Connect to your Azure tenant via PowerShell
 
 13. Export Blueprint for redistribution
 
@@ -195,7 +194,7 @@ Export-AzBlueprintWithArtifact -Blueprint $bpDefinition -OutputPath 'C:\Images\B
 
 ![ExportBlueprint](/images/step-13-ExportBlueprint.png "Export Blueprint")
 
-   * If you browse to the specified directory you will find a folder that matches the name of your Blueprint that contains a JSON file and a subfolder called Artifacts that contains your artifacts.
+   * If you browse to the specified directory, you will find a folder that matches the name of your Blueprint that contains a JSON file and a subfolder called Artifacts that contains your artifacts.
 
 ![ExportedFiles](/images/step-13-1-exportedfiles.png "Exported Files")
 
@@ -221,7 +220,7 @@ I am excited about how easy the Azure team has made creating new deployments usi
 
 ## Further reading
 
-Check out this sites for more information:
+Check out these sites for more information:
 * [Azure Blueprints Documentation](https://www.screentogif.com/) Official Microsoft documentation
 * [Azure Tips and Tricks: Working with Azure Blueprints](https://microsoft.github.io/AzureTipsAndTricks/blog/tip210.html) 
 * [An overview of Azure Blueprints | Azure Friday](https://www.youtube.com/watch?v=cQ9D-d6KkMY&t=311s) Video
