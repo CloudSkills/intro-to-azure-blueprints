@@ -1,5 +1,5 @@
 # Introduction to Azure Blueprints
-       
+
 Let me ask you a question. Would you consider building a house without knowing what it would look like when you're done? The supplies needed? An idea of what is allowed by building and safety codes? I assume the answer to that question is an emphatic, NO. So why do you build your Azure environments that way?
 
 As a consultant for a managed service provider, producing a consistent, supportable and reproducible environment is a part of my design philosophy. Deviating my company's design principles and best practices increase support costs and lead to unhappy customers. That's why I'm very interested in technologies that can save me time and effort.
@@ -103,11 +103,11 @@ Now that we understand the basics of Azure Blueprints, let's consider the follow
 
 ![PolicyAzureTags](/images/step-5-4-Add-Policy-Tags.png "Policy - Azure Tags")
 
-   * From the Create Blueprint hierarchy > select the **Add a tag to resource groups** policy and enter the tag: Usage and tag value: Production 
+   * From the Create Blueprint hierarchy > select the **Add a tag to resource groups** policy and enter the tag: **Usage** and tag value: **Production**
 
 ![PolicyAzureTags](/images/step-5-4-1-Add-Policy-Tags.png "Policy - Azure Tags")
 
-   * Add artifact > Resource group named Virtual Machine Resource Group
+   * Add artifact > Resource group named **Virtual Machine Resource Group**
 
 ![AddResourceGroup](/images/step-5-5-Add-ResourceGroup.png "Add Resource Group")
 
@@ -164,6 +164,8 @@ Now that we understand the basics of Azure Blueprints, let's consider the follow
 
    * Assign values to the available template parameters
 
+> Blueprint parameters can be defined during its creation or they can be left to be entered when the Blueprint is assigned.  
+
 ![AssignBlueprintSettings1](/images/step-10-1-AssignBlueprintInfo1.png "Assign Blueprint Settings 1")
  
 ![AssignBlueprintSettings2](/images/step-10-1-AssignBlueprintInfo2.png "Assign Blueprint Settings 2")
@@ -184,12 +186,11 @@ Now that we understand the basics of Azure Blueprints, let's consider the follow
 
    * We can use the Az.Blueprint PowerShell module to export the Blueprint with the following commands:
 
-```azurepowershell
+```azurepowershell-interactive
 Connect-AzAccount
 $bpDefinition = Get-AzBlueprint -Name 'Blueprint-01' -Version '1.0'
 Export-AzBlueprintWithArtifact -Blueprint $bpDefinition -OutputPath 'C:\Images\Blueprints'
 ```
-
    * The result of running those commands looks like this:
 
 ![ExportBlueprint](/images/step-13-ExportBlueprint.png "Export Blueprint")
