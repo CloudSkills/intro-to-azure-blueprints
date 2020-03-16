@@ -66,7 +66,7 @@ Now that we understand the basics of Azure Blueprints, let's consider the follow
 * [ ] Disallow environment user from deleting the defined resources
 
 ### Walk through of creating a Blueprint
-1. Open the Azure Portal and launch the Azure Blueprints service
+1. Open the Azure Portal and launch the Azure Blueprints service  
 
 ![OpenBlueprint](/images/step-1-open-blueprint.png "Open Blueprint")
 
@@ -224,4 +224,4 @@ Check out these sites for more information:
 * [Azure Blueprints Documentation](https://www.screentogif.com/) Official Microsoft documentation
 * [Azure Tips and Tricks: Working with Azure Blueprints](https://microsoft.github.io/AzureTipsAndTricks/blog/tip210.html) 
 * [An overview of Azure Blueprints | Azure Friday](https://www.youtube.com/watch?v=cQ9D-d6KkMY&t=311s) Video
-* [Azure Blueprints & Policy to get DevOps right | Best of Microsoft Ignite 2018](https://www.youtube.com/watch?v=OiOXlgFNgDo) Video 
+* [Azure Blueprints & Policy to get DevOps right | Best of Microsoft Ignite 2018](https://www.youtube.com/watch?v=OiOXlgFNgDo) Video                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
