@@ -55,15 +55,15 @@ Changes we can make when updating an assignment are:
 Now that we understand the basics of Azure Blueprints, let's consider the following scenario. You have been assigned a project to assist a team of developers to deploy small Azure environments for an application they're writing. I have listed the design requirements below. Let's walk through how we could do this with Azure Blueprints.
 
 ### Requirements:
-* VNet configured with NSG
-* Resource group for network resources
-* Resource group for VM
-* Contributor role for "Cloud Admins" group on the subscription
-* Virtual machine contributor role for "Helpdesk Team" on the Virtual Machine Resource Group
-* Ensure VM are backed up
-* Assign Usage tag to all resources
-* Make the environment reproducible for other subscriptions
-* Disallow environment user from deleting the defined resources
+* [ ] VNet configured with NSG
+* [ ] Resource group for network resources
+* [ ] Resource group for VM
+* [ ] Contributor role for "Cloud Admins" group on the subscription
+* [ ] Virtual machine contributor role for "Helpdesk Team" on the Virtual Machine Resource Group
+* [ ] Ensure VM are backed up
+* [ ] Assign Usage tag to all resources
+* [ ] Make the environment reproducible for other subscriptions
+* [ ] Disallow environment user from deleting the defined resources
 
 ### Walk through of creating a Blueprint
 1. Open the Azure Portal and launch the Azure Blueprints service
@@ -204,15 +204,15 @@ Export-AzBlueprintWithArtifact -Blueprint $bpDefinition -OutputPath 'C:\Images\B
 
 Let's take a quick look at which settings and artifacts we used to meet our requirements in this scenario:
 
-* **VNet configured with NSG** - Blueprint template that included ARM templates
-* **Resource group for network resources** - Resource group artifact
-* **Resource group for VM** - Artifact - Resource group artifact
-* **Contributor role for "Cloud Admins"** group on the subscription - Policy assignment artifact
-* **Virtual machine contributor role for "Helpdesk Team"** - Role assignment artifact
-* **Ensure VM is backed up** - Policy assignment artifact
-* **Assign Usage tag to all resources** - Policy assignment artifact
-* **Make the environment reproducible for other subscriptions** - Az.Blueprint PowerShell module 
-* **Disallow environment user from deleting the defined resources** - Lock assignment 
+* [x] **VNet configured with NSG** - Blueprint template that included ARM templates
+* [x] **Resource group for network resources** - Resource group artifact
+* [x] **Resource group for VM** - Artifact - Resource group artifact
+* [x] **Contributor role for "Cloud Admins"** group on the subscription - Policy assignment artifact
+* [x] **Virtual machine contributor role for "Helpdesk Team"** - Role assignment artifact
+* [x] **Ensure VM is backed up** - Policy assignment artifact
+* [x] **Assign Usage tag to all resources** - Policy assignment artifact
+* [x] **Make the environment reproducible for other subscriptions** - Az.Blueprint PowerShell module 
+* [x] **Disallow environment user from deleting the defined resources** - Lock assignment 
 
 ## Summary
 
