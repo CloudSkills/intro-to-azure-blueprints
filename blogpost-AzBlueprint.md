@@ -217,7 +217,7 @@ Let's take a quick look at which settings and artifacts we used to meet our requ
 
 ## Summary
 
-I am excited about how easy the Azure team has made creating new deployments using Azure Blueprints. As someone who is not familiar with tools like Ansible or Terraform, Azure Blueprints are a good building block into the infrastructure as code mindset. I'm looking forward to testing it further and using it in my customer deployments.
+I am excited about how easy the Azure team has made creating new deployments using Azure Blueprints. As someone who is not familiar with tools like Ansible or Terraform, Azure Blueprints will be a good building block into the infrastructure as code mindset. I'm looking forward to testing it further and using it in my customer deployments.
 
 ## Further reading
 
